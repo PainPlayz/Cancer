@@ -11,9 +11,6 @@
     </Texture>
     <SlotType>10</SlotType>
     <Description>A box that has a chance to give you Ultimate items (Each box has their own Legendary item).</Description>
-    <ExtraTooltipData>
-      <EffectInfo name="Bonus" description="This item grant a random item when consumed. Use this in the vault to obtain valuable loot!"/>
-    </ExtraTooltipData>
     <Sound>use_potion</Sound>
     <Activate boxType="Ultimate" rewards="0x7038">LootBox</Activate>
     <Consumable/>
@@ -32,9 +29,7 @@
     </Texture>
     <SlotType>10</SlotType>
     <Description>A box that has a chance to give you Legendary items (Each box has their own Legendary item).</Description>
-    <ExtraTooltipData>
-      <EffectInfo name="Bonus" description="This item grant a random item when consumed. Use this in the vault to obtain valuable loot!"/>
-    </ExtraTooltipData>
+
     <Sound>use_potion</Sound>
     <Activate boxType="Legendary" rewards="0x5000,0x5001,0x5002,0x5003">LootBox</Activate>
     <Consumable/>
@@ -52,9 +47,7 @@
     </Texture>
     <SlotType>10</SlotType>
     <Description>A box that has a chance to give you Rare items (Each box has their own Legendary item).</Description>
-    <ExtraTooltipData>
-      <EffectInfo name="Bonus" description="This item grant a random item when consumed. Use this in the vault to obtain valuable loot!"/>
-    </ExtraTooltipData>
+
     <Sound>use_potion</Sound>
     <Activate boxType="Rare" rewards="0x5000,0x5001,0x5002,0x5003">LootBox</Activate>
     <Consumable/>
@@ -73,9 +66,7 @@
     </Texture>
     <SlotType>10</SlotType>
     <Description>A box that has a chance to give you Epic items (Each box has their own Legendary item).</Description>
-    <ExtraTooltipData>
-      <EffectInfo name="Bonus" description="This item grant a random item when consumed. Use this in the vault to obtain valuable loot!"/>
-    </ExtraTooltipData>
+
     <Sound>use_potion</Sound>
     <Activate boxType="Epic" rewards="0x5000,0x5001,0x5002,0x5003">LootBox</Activate>
     <Consumable/>
@@ -94,9 +85,7 @@
     </Texture>
     <SlotType>10</SlotType>
     <Description>A box that gives you basic items (Each box has their own Legendary item).</Description>
-    <ExtraTooltipData>
-      <EffectInfo name="Bonus" description="This item grant a random item when consumed. Use this in the vault to obtain valuable loot!"/>
-    </ExtraTooltipData>
+
     <Sound>use_potion</Sound>
     <Activate boxType="Common" rewards="0x7060">LootBox</Activate>
     <Consumable/>
@@ -138,10 +127,7 @@
          <File>lofiObj7</File>
          <Index>0xa3</Index>
       </Texture>
-         <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Blade"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+>
       <SlotType>9</SlotType>
       <Description>{Evil will never escape.}</Description>
       <ActivateOnEquip stat="0" amount="90">IncrementStat</ActivateOnEquip>
@@ -162,10 +148,7 @@
          <Index>0x93</Index>
       </Texture>
       <SlotType>9</SlotType>
-       <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Blade"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{An cape made to protect the city fom evil with haste.}</Description>
        <ActivateOnEquip stat="0" amount="70">IncrementStat</ActivateOnEquip>
        <ActivateOnEquip stat="3" amount="70">IncrementStat</ActivateOnEquip>
@@ -178,10 +161,7 @@
     <Object type="0x7058" id="Knights Trusted Armor">
       <Class>Equipment</Class>
       <Item/>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Blade"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Texture>
          <File>lofiObj7</File>
          <Index>0x92</Index>
@@ -205,10 +185,7 @@
       <Index>0x53</Index>
     </Texture>
     <SlotType>9</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Unknown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>{A ring made with a mythical gem that locks souls away.}</Description>
    <ActivateOnEquip stat="3" amount="110">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
@@ -227,10 +204,7 @@
          <Index>0x42</Index>
       </Texture>
       <SlotType>6</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="UnKnown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>An hide that Davy Jones used to wear. The leather was found from dead animals</Description>
       <ActivateOnEquip stat="21" amount="27">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="-6">IncrementStat</ActivateOnEquip>
@@ -250,10 +224,7 @@
          <Index>0x31</Index>
       </Texture>
       <SlotType>20</SlotType>
-                  <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="UnKnown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{A trap that uses the power of magic and ghost to help trap the enemy.}</Description>
        <ActivateOnEquip stat="0" amount="110">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="8">IncrementStat</ActivateOnEquip>
@@ -356,11 +327,7 @@
       <File>lofiObj7</File>
       <Index>0x83</Index>
     </Texture>
-    <SlotType>9</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Kith"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>{A beautiful ring made of petals from the cherry blossoms.}</Description>
     <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="26" amount="7">IncrementStat</ActivateOnEquip>
@@ -377,11 +344,7 @@
       <Index>0x81</Index>
     </Texture>
     <SlotType>15</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Kith"/>
-      <EffectInfo name="Projectile" description="Life"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>
       {A quiver that summons Cherry Blossom petals to pierce the opposing opponent. A creative and pretty way to stricke a deadly blow.}
     </Description>
@@ -418,10 +381,7 @@
       <Index>0x82</Index>
     </Texture>
     <SlotType>6</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Kith"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>{An armor that has a pink glow, but breathes new life.}</Description>
     <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
@@ -440,11 +400,7 @@
       <Index>0x80</Index>
     </Texture>
     <SlotType>3</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Kith"/>
-      <EffectInfo name="Projectile" description="Life"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>{A bow that magically summons spring petals which bring new life into existence.}</Description>
     <RateOfFire>1</RateOfFire>
     <Sound>weapon/double_bow</Sound>
@@ -489,10 +445,7 @@
          <Index>0x70</Index>
       </Texture>
       <SlotType>1</SlotType>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Six"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{Two electrical blades able to cut everything it faces. }</Description>
       <RateOfFire>0.80</RateOfFire>
       <Sound>weapon/glass_sword</Sound>
@@ -548,10 +501,7 @@
          <File>lofiObj7</File>
          <Index>0x03</Index>
       </Texture>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Unknown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <SlotType>9</SlotType>
     <Description>{A unique relic from the easter bunny? That's a first.}</Description>
       <ActivateOnEquip stat="0" amount="160">IncrementStat</ActivateOnEquip>
@@ -569,10 +519,7 @@
          <File>lofiObj7</File>
          <Index>0x01</Index>
       </Texture>
-        <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Unknown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <SlotType>11</SlotType>
      <Description>{What kind of trickery is this?!}</Description>
       <Sound>spell/magic_nova</Sound>
@@ -597,10 +544,7 @@
      <Object type="0x7032" id="Robe of the Easter Bunny">
       <Class>Equipment</Class>
       <Item/>
-          <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Unknown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Texture>
          <File>lofiObj7</File>
          <Index>0x02</Index>
@@ -623,10 +567,7 @@
          <File>lofiObj7</File>
          <Index>0x00</Index>
       </Texture>
-       <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Unknown"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <SlotType>17</SlotType>
       <Description>{A staff used for tricks by the boisterous bunny. Still hurts for a trick...}</Description>
       <RateOfFire>0.85</RateOfFire>
@@ -657,10 +598,7 @@
          <Index>0x1e</Index>
       </Texture>
       <SlotType>3</SlotType>
-         <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Life"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{Only used on human assassination missions ordered by the gods}</Description>
       <RateOfFire>1.2</RateOfFire>
       <Sound>weapon/double_bow</Sound>
@@ -688,10 +626,7 @@
          <File>lofiObj6</File>
          <Index>0x2f</Index>
       </Texture>
-           <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Six"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <SlotType>14</SlotType>
       <Description>{...a pair of fantastic bunny pajamas!}</Description>
 	  <ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
@@ -709,10 +644,7 @@
    <Object type="0x7028" id="Harden Bunny Armor">
       <Class>Equipment</Class>
       <Item/>
-                <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Six"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Texture>
          <File>lofiObj6</File>
          <Index>0x2d</Index>
@@ -731,10 +663,7 @@
    <Object type="0x7027" id="Bunny Skin Armor">
       <Class>Equipment</Class>
       <Item/>
-                <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Six"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Texture>
          <File>lofiObj6</File>
          <Index>0x2e</Index>
@@ -758,10 +687,6 @@
          <File>lofiObj6</File>
          <Index>0x0d</Index>
       </Texture>
-                <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="WildShadow"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <SlotType>19</SlotType>
       <Description>{A skull that glows under the death of a king.}</Description>
       <ActivateOnEquip stat="21" amount="7">IncrementStat</ActivateOnEquip>
@@ -787,10 +712,7 @@
          <Index>0x0e</Index>
       </Texture>
       <SlotType>5</SlotType>
-           <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Blade"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>A mythical shield infused with the light of hero's.</Description>
       <Sound>spell/fire_spray</Sound>
       <Projectile>
@@ -826,10 +748,7 @@
          <Index>0x1f</Index>
       </Texture>
       <SlotType>22</SlotType>
-      <ExtraTooltipData>
-       <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-      </ExtraTooltipData>
+
       <Description>The prism allowed to take control of a persons movement.</Description>
       <Sound>spell/light_heal</Sound>
       <Usable/>
@@ -853,10 +772,7 @@
       <SlotType>13</SlotType>
       <Description>{The true meaning of time shifting. This robe has the power to change time beyond limits.}</Description>
       <Sound>spell/fire_nova</Sound>
-              	  	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <ActivateOnEquip stat="22" amount="11">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="6">IncrementStat</ActivateOnEquip>
       <Usable/>
@@ -882,10 +798,7 @@
          <Index>0xcb</Index>
       </Texture>
       <SlotType>17</SlotType>
-             	  	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{The godly staff thats able to break any barrier with no problems}</Description>
       <RateOfFire>0.41</RateOfFire>
       <Sound>weapon/sprite_wand</Sound>
@@ -960,10 +873,6 @@
          <File>lofiObj4</File>
          <Index>0xe6</Index>
       </Texture>
-     <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <SlotType>10</SlotType>
       <Description>{What the leprechauns used to steal ye gold!}</Description>
       <Sound>spell/light_heal</Sound>
@@ -987,11 +896,6 @@
          <File>lofiObj4</File>
          <Index>0xe5</Index>
       </Texture>
-      <SlotType>7</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Invisible Spn"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Description>{This armor had the power of a dark knight, only heros could tame the power.}</Description>
       <ActivateOnEquip stat="0" amount="30">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="24">IncrementStat</ActivateOnEquip>
@@ -1011,10 +915,7 @@
          <Index>0xe4</Index>
       </Texture>
       <SlotType>17</SlotType>
-       	  	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{A staff that feels so heavy but so powerful}</Description>
       <RateOfFire>.97</RateOfFire>
       <Sound>weapon/wand_of_death</Sound>
@@ -1046,10 +947,6 @@
          <Index>0xe3</Index>
       </Texture>
       <Activate stat="21" amount="10">IncrementStat</Activate>
-      	  	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <SlotType>10</SlotType>
       <Description>{A package that gives xp and defense!}</Description>
       <Sound>spell/light_heal</Sound>
@@ -1076,10 +973,6 @@
       <Description>{This Ancient dagger once known for killing anything in its path.}</Description>
       <RateOfFire>1</RateOfFire>
       <Sound>weapon/fire_dagger</Sound>
-	  	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Projectile>
          <ObjectId>Rainbow Magic</ObjectId>
          <Speed>180</Speed>
@@ -1107,10 +1000,7 @@
          <Index>0xe1</Index>
       </Texture>
       <SlotType>10</SlotType>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Six"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{Eveyone eats cheese with their waffles!}</Description>
       <Sound>use_potion</Sound>
       <Activate amount="150">Heal</Activate>
@@ -1130,10 +1020,7 @@
          <Index>0xbf</Index>
       </Texture>
       <SlotType>1</SlotType>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{This blade has the weight of a feather an slices through armor like nothing. (Needs a sprite)}</Description>
       <RateOfFire>1.1</RateOfFire>
       <Sound>weapon/glass_sword</Sound>
@@ -1164,10 +1051,7 @@
          <File>lofiObj4</File>
          <Index>0xaf</Index>
       </Texture>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <SlotType>8</SlotType>
       <Description>{A wand that gives off a silent tone that makes your hand feel weird.}</Description>
       <RateOfFire>1.1</RateOfFire>
@@ -1287,10 +1171,6 @@
          <Index>0x0f</Index>
       </Texture>
       <SlotType>14</SlotType>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Poshun"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Description>{A robe that was enchanted by the power of a chemical change.}</Description>
       <ActivateOnEquip stat="20" amount="8">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
@@ -1405,10 +1285,6 @@
   <Index>0x69</Index>
 </Texture>
 <SlotType>2</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Poshun"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
 <Description>A dagger crafted from stone and has a copper blade</Description>
 <RateOfFire>1</RateOfFire>
 <Sound>weapon/fire_dagger</Sound>
@@ -1450,10 +1326,7 @@
       </Texture>
       <SlotType>1</SlotType>
     <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="ProLife"/>
-      <EffectInfo name="From" description="Discord"/>
-    <EffectInfo name="Special" description="This sword gives the enemy slowed for 3 seconds"/>
-    </ExtraTooltipData>
+
       <Description>A hammer that has the power to freeze enemies with a touch of its power. </Description>
       <RateOfFire>0.95</RateOfFire>
       <Sound>weapon/mithril_sword</Sound>
@@ -1485,10 +1358,6 @@
       <Description>{Not even Gods can handle this bow without a delay between every single attack}</Description>
       <RateOfFire>0.33</RateOfFire>
       <Sound>weapon/golden_bow</Sound>
-	      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Projectile>
          <ObjectId>Black Arrow</ObjectId>
          <Speed>140</Speed>
@@ -1516,12 +1385,7 @@
       <File>lofiObj4</File>
       <Index>0xfc</Index>
     </Texture>
-	
     <SlotType>6</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Poshun"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>This armor has multiple storys to tell from the day it was crafted. Made from materials only found from the lord</Description>
     <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="0" amount="70">IncrementStat</ActivateOnEquip>
@@ -1550,10 +1414,6 @@
       <Index>0xfb</Index>
     </Texture>
     <SlotType>15</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>
       {A quiver hot enough to burn the skill off any enemy. It can also melt through armor}
     </Description>
@@ -1594,10 +1454,6 @@
       <Index>0xfa</Index>
     </Texture>
     <SlotType>6</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>Made from Molten lava found only in the deepest part of hell.</Description>
     <ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="20" amount="9">IncrementStat</ActivateOnEquip>
@@ -1627,10 +1483,6 @@
       <Index>0xf9</Index>
     </Texture>
     <SlotType>8</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>{A wand that uses the advantage to burn its enemies. built using obsidian and molten lava.}</Description>
     <RateOfFire>0.89</RateOfFire>
     <Sound>weapon/wand_of_death</Sound>
@@ -1668,10 +1520,6 @@
       <Index>0xf8</Index>
     </Texture>
     <SlotType>11</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>A powerful tablet only held by the goddess of death</Description>
     <Sound>spell/magic_nova</Sound>
     <Projectile>
@@ -1719,10 +1567,6 @@
       <Index>0xf7</Index>
     </Texture>
     <SlotType>8</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>The wand from a goddess used to cast ancient spells.</Description>
     <RateOfFire>1.25</RateOfFire>
     <Sound>weapon/hells_fire_wand</Sound>
@@ -1750,10 +1594,6 @@
       <Index>0xf5</Index>
     </Texture>
     <SlotType>20</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Tidan"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>{A trap made out of pure candy, the only people who like candy are humans.}</Description>
     <ActivateOnEquip stat="21" amount="2">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
@@ -1871,10 +1711,6 @@
          <Index>0xf4</Index>
       </Texture>
       <SlotType>19</SlotType>
-       <ExtraTooltipData>
-         <EffectInfo name="Spriter" description="Pepus"/>
-         <EffectInfo name="From" description="Discord"/>
-       </ExtraTooltipData>
       <Description>{A skull buried in the lakes under the ancient hermit}</Description>
       <ActivateOnEquip stat="21" amount="3">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="6">IncrementStat</ActivateOnEquip>
@@ -1909,11 +1745,6 @@
 </Texture>
 <RT/>
 <SlotType>1</SlotType>
-        <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-      <EffectInfo name="Special" description="This sword gives the enemy bleeding for 3 seconds"/>
-    </ExtraTooltipData>
 <Description>A mysterious sword covered in a wet flame that will never go out.</Description>
 <RateOfFire>1</RateOfFire>
 <Sound>weapon/blunt_sword</Sound>
@@ -1948,10 +1779,6 @@
          <Index>0xf3</Index>
       </Texture>
       <SlotType>7</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Description>{Armor once owned by a black knight who later died inside a lair. The knights body was never found.}</Description>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="25">IncrementStat</ActivateOnEquip>
@@ -1971,10 +1798,6 @@
       <Index>0xf1</Index>
     </Texture>
     <SlotType>14</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
     <Description>A robe made from wood and grass to protect the flower queen.</Description>
     <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="27" amount="15">IncrementStat</ActivateOnEquip>
@@ -2004,10 +1827,7 @@
          <Index>0xf0</Index>
       </Texture>
       <SlotType>17</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{A staff that uses bella's power of love to kill any enemy}</Description>
       <RateOfFire>0.88</RateOfFire>
       <Sound>weapon/wand_of_death</Sound>
@@ -2099,10 +1919,7 @@
          <Index>0xf3</Index>
       </Texture>
       <SlotType>7</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
       <Description>{Armor once owned by a black knight who later died inside a lair. The knights body was never found.}</Description>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="25">IncrementStat</ActivateOnEquip>
@@ -2122,10 +1939,7 @@
       <Index>0xf1</Index>
     </Texture>
     <SlotType>14</SlotType>
-    <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
+
     <Description>A robe made from wood and grass to protect the flower queen.</Description>
     <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
     <ActivateOnEquip stat="27" amount="15">IncrementStat</ActivateOnEquip>
@@ -2201,10 +2015,6 @@
          <Index>0x1f</Index>
       </Texture>
       <SlotType>6</SlotType>
-                 <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
       <Description>{Mined from the deep cave and has a very nice feel to it.}</Description>
       <ActivateOnEquip stat="21" amount="18">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="1">IncrementStat</ActivateOnEquip>
@@ -2238,10 +2048,6 @@
 <Description>A overwhelming dagger crafted by the lich to slay her enemies.</Description>
 <RateOfFire>1.1</RateOfFire>
 <Sound>weapon/fire_dagger</Sound>
-          <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
 <Projectile>
 	<ObjectId>Dagger of dirk thing</ObjectId>
 	<Speed>174</Speed>
@@ -2285,10 +2091,6 @@
 <SlotType>1</SlotType>
 <Description>An ancient sword strong enough to hold its own on any battle</Description>
 <RateOfFire>1.3</RateOfFire>
-      <ExtraTooltipData>
-      <EffectInfo name="Spriter" description="Pepus"/>
-      <EffectInfo name="From" description="Discord"/>
-    </ExtraTooltipData>
 <Sound>monster/skull_shrine_hit</Sound>
 <Projectile>
 	<ObjectId>Arena sword thing</ObjectId>
