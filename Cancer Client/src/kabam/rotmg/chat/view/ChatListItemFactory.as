@@ -123,10 +123,10 @@ public class ChatListItemFactory {
 
     private function processName():String {
         var _local_1:String = ((((this.message.isWhisper) && (!(this.message.isToMe)))) ? this.message.recipient : this.message.name);
-        if ((((_local_1.charAt(0) == "#")) || ((_local_1.charAt(0) == "@")))) {
+        if ((((_local_1.charAt(0) == "#")) || ((_local_1.charAt(0) == "@")) || ((_local_1.charAt(0) == "&")) || ((_local_1.charAt(0) == "*")) || ((_local_1.charAt(0) == "(")))) {
             _local_1 = _local_1.substr(1);
         }
-        return ((("<" + _local_1) + ">"));
+        return ((("[" + _local_1) + "]"));
     }
 
     private function makeMessageText():void {
@@ -202,6 +202,15 @@ public class ChatListItemFactory {
         if (this.message.name.charAt(0) == "@") {
             return (0xFFFF00);
         }
+        if (this.message.name.charAt(0) == "&") {
+            return (0x000000);
+        }
+        if (this.message.name.charAt(0) == "*") {
+            return (0xFF00FF);
+        }
+        if (this.message.name.charAt(0) == "(") {
+            return (0x6633BB);
+        }
         if (this.message.recipient == GUILD) {
             return (10944349);
         }
@@ -228,6 +237,16 @@ public class ChatListItemFactory {
         if (_local_1.charAt(0) == "@") {
             return (0xFFFF00);
         }
+        if (_local_1.charAt(0) == "&") {
+            return (0x000000);
+        }
+        if (_local_1.charAt(0) == "*") {
+            return (0xFF00FF);
+        }
+        if (_local_1.charAt(0) == "(") {
+            return (0x6633BB);
+        }
+
         if (this.message.recipient == GUILD) {
             return (10944349);
         }

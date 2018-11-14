@@ -149,17 +149,17 @@
          <path-element>D:/s1583197/Desktop/flex sdk 4.16.1/frameworks/libs/osmf.swc</path-element>
          <path-element>D:/s1583197/Desktop/flex sdk 4.16.1/frameworks/libs/textLayout.swc</path-element>
          <path-element>D:/s1583197/Desktop/flex sdk 4.16.1/frameworks/libs/authoringsupport.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/as3-signals.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/as3core.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/as3crypto.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/Console.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/GTween-v2.01.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/hamcrest-as3-flex-1.1.3.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/Hi-Res-Stats.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/ionel.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/robotlegs.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/starling.swc</path-element>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/libs/Swiftsuspenders-v2.0.0rc1.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/as3-signals.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/as3core.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/as3crypto.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/Console.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/GTween-v2.01.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/hamcrest-as3-flex-1.1.3.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/Hi-Res-Stats.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/ionel.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/robotlegs.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/starling.swc</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/libs/Swiftsuspenders-v2.0.0rc1.swc</path-element>
       </library-path>
       <!-- compiler.locale: specifies the locale for internationalization-->
       <locale>
@@ -227,7 +227,7 @@
       -->
       <!-- compiler.source-path: list of path elements that form the roots of ActionScript class hierarchies-->
       <source-path>
-         <path-element>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/src</path-element>
+         <path-element>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/src</path-element>
       </source-path>
       <!-- compiler.strict: runs the AS3 compiler in strict error checking mode.-->
       <strict>true</strict>
@@ -436,7 +436,7 @@
    <link-report>filename</link-report>
    -->
    <!-- load-config: load a file containing configuration options-->
-   <load-config>C:\Users\s1583197\.IntelliJIdea2017.3\system\compile-server\webmain_46cbbb7f\_temp_\IntelliJ_IDEA\idea-D9F04190-45A3E760.xml</load-config>
+   <load-config>C:\Users\s1583197\.IntelliJIdea2017.3\system\compile-server\webmain_9870cb94\_temp_\IntelliJ_IDEA\idea-D9F04190-45A3E760.xml</load-config>
    <!-- load-externs: an XML file containing <def>, <pre>, and <ext> symbols to omit from linking when building a SWF-->
    <!-- load-externs usage:
    <load-externs>filename</load-externs>
@@ -488,7 +488,7 @@
       -->
    </metadata>
    <!-- output: the filename of the SWF movie to create-->
-   <output>D:/s1583197/Documents/GitHub/el-cancer-realms/Cancer Client/bin-debug/guild.swf</output>
+   <output>D:/s1583197/Documents/GitHub/Cancer/Cancer Client/bin-debug/guild.swf</output>
    <!-- raw-metadata: XML text to store in the SWF metadata (overrides metadata.* configuration)-->
    <!-- raw-metadata usage:
    <raw-metadata>text</raw-metadata>

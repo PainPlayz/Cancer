@@ -19,9 +19,9 @@ import org.osflash.signals.Signal;
 public class TabStripView extends Sprite {
 
     public const tabSelected:Signal = new Signal(String);
-    public const WIDTH:Number = 186;
-    public const HEIGHT:Number = 153;
-    private const tabSprite:Sprite = new Sprite();
+    public const WIDTH:Number = 75;
+    public const HEIGHT:Number = 50;
+    //private const tabSprite:Sprite = new Sprite();
     private const background:Sprite = new Sprite();
     private const containerSprite:Sprite = new Sprite();
 
@@ -35,14 +35,14 @@ public class TabStripView extends Sprite {
 
     //public var friendsBtn:IconButton;
 
-    public function TabStripView(_arg_1:Number = 186, _arg_2:Number = 153) {
+    public function TabStripView(_arg_1:Number = 75, _arg_2:Number = 50) {
         this.tabs = new Vector.<TabView>();
         this.contents = new Vector.<Sprite>();
         super();
         this._width = _arg_1;
         this._height = _arg_2;
-        this.tabSprite.addEventListener(MouseEvent.CLICK, this.onTabClicked);
-        addChild(this.tabSprite);
+        //this.tabSprite.addEventListener(MouseEvent.CLICK, this.onTabClicked);
+        //addChild(this.tabSprite);
         this.drawBackground();
         addChild(this.containerSprite);
         this.containerSprite.y = TabConstants.TAB_TOP_OFFSET;
@@ -93,7 +93,7 @@ public class TabStripView extends Sprite {
         var _local_2:uint = this.tabs.length;
         _local_1 = 0;
         while (_local_1 < _local_2) {
-            this.tabSprite.removeChild(this.tabs[_local_1]);
+            ///this.tabSprite.removeChild(this.tabs[_local_1]);
             this.containerSprite.removeChild(this.contents[_local_1]);
             _local_1++;
         }
@@ -113,7 +113,7 @@ public class TabStripView extends Sprite {
             }
         }
         this.tabs.push(_local_4);
-        this.tabSprite.addChild(_local_4);
+        //this.tabSprite.addChild(_local_4);
         this.contents.push(_arg_2);
         this.containerSprite.addChild(_arg_2);
         if (_local_3 > 0) {

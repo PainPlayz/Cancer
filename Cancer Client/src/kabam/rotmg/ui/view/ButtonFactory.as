@@ -25,6 +25,7 @@ public class ButtonFactory {
     private static var doneButton:TitleMenuOption;
     private static var mainButton:TitleMenuOption;
     private static var classesButton:TitleMenuOption;
+    private static var websiteButton:TitleMenuOption;
     private static var transferAccountButton:TitleMenuOption;
 
 
@@ -54,6 +55,10 @@ public class ButtonFactory {
 
     public static function getServersButton():TitleMenuOption {
         return ((serversButton = ((serversButton) || (makeButton(ScreenTypes.SERVERS, BUTTON_SIZE_SMALL, RIGHT)))));
+    }
+
+    public  static function getWebsiteButton():TitleMenuOption {
+        return ((websiteButton = ((websiteButton) || (makeButton(ScreenTypes.WEBSITE, BUTTON_SIZE_SMALL, RIGHT)))));
     }
 
     public static function getLanguagesButton():TitleMenuOption {

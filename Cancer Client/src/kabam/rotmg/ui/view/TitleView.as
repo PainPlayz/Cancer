@@ -46,11 +46,12 @@ public class TitleView extends Sprite {
     public var legendsClicked:Signal;
     public var languagesClicked:Signal;
     public var supportClicked:Signal;
-    public var kabamTransferClicked:Signal;
+    //public var kabamTransferClicked:Signal;
     public var editorClicked:Signal;
     public var quitClicked:Signal;
     public var optionalButtonsAdded:Signal;
-    private var migrateButton:TitleMenuOption;
+    private var websiteClicked:Signal;
+    //private var migrateButton:TitleMenuOption;
 
     public function TitleView() {
         var _local_2:String;
@@ -66,8 +67,8 @@ public class TitleView extends Sprite {
         addChild(new SoundIcon());
         var _local_1:PlatformModel = StaticInjectorContext.getInjector().getInstance(PlatformModel);
         if (_local_1.getPlatform() == PlatformType.WEB) {
-            this.makeMigrateButton();
-            addChild(this.migrateButton);
+            //this.makeMigrateButton();
+            //addChild(this.migrateButton);
             _local_2 = "";
             try {
                 _local_2 = ExternalInterface.call("window.location.search.substring", 1);
@@ -81,8 +82,8 @@ public class TitleView extends Sprite {
         }
         else {
             if (_local_1.getPlatform() == PlatformType.KABAM) {
-                this.makeMigrateButton();
-                addChild(this.migrateButton);
+                //this.makeMigrateButton();
+                //addChild(this.migrateButton);
             }
         }
     }
@@ -98,17 +99,20 @@ public class TitleView extends Sprite {
         var _local_3:TitleMenuOption = ButtonFactory.getAccountButton();
         var _local_4:TitleMenuOption = ButtonFactory.getLegendsButton();
         var _local_5:TitleMenuOption = ButtonFactory.getSupportButton();
+        var _local_7:TitleMenuOption = ButtonFactory.getWebsiteButton();
         this.playClicked = _local_1.clicked;
         this.serversClicked = _local_2.clicked;
         this.accountClicked = _local_3.clicked;
         this.legendsClicked = _local_4.clicked;
         this.supportClicked = _local_5.clicked;
+        this.websiteClicked = _local_7.clicked;
         var _local_6:MenuOptionsBar = new MenuOptionsBar();
         _local_6.addButton(_local_1, MenuOptionsBar.CENTER);
         _local_6.addButton(_local_2, MenuOptionsBar.LEFT);
         _local_6.addButton(_local_5, MenuOptionsBar.LEFT);
         _local_6.addButton(_local_3, MenuOptionsBar.RIGHT);
         _local_6.addButton(_local_4, MenuOptionsBar.RIGHT);
+        _local_6.addButton(_local_7, MenuOptionsBar.RIGHT);
         return (_local_6);
     }
 
@@ -159,14 +163,14 @@ public class TitleView extends Sprite {
         this.editorClicked = _local_1.clicked;
     }
 
-    private function makeMigrateButton():void {
+    /*private function makeMigrateButton():void {
         this.migrateButton = new TitleMenuOption("Want to migrate your Kabam.com account?", 16, false);
         this.migrateButton.setAutoSize(TextFieldAutoSize.CENTER);
         this.kabamTransferClicked = new NativeMappedSignal(this.migrateButton, MouseEvent.CLICK);
         this.migrateButton.setTextKey("Want to migrate your Kabam.com account?");
         this.migrateButton.x = 400;
         this.migrateButton.y = 500;
-    }
+    }*/
 
 
 }

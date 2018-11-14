@@ -44,10 +44,10 @@ public class HUDView extends Sprite implements UnFocusAble {
 
     private const BG_POSITION:Point = new Point(0, 0);
     private const MAP_POSITION:Point = new Point(600, 5);
-    private const CHARACTER_DETAIL_PANEL_POSITION:Point = new Point(330, 462);
-    private const STAT_METERS_POSITION:Point = new Point(330, 520);
+    private const CHARACTER_DETAIL_PANEL_POSITION:Point = new Point(330, 330);
+    private const STAT_METERS_POSITION:Point = new Point(320, 510);
     private const EQUIPMENT_INVENTORY_POSITION:Point = new Point(330, 495);
-    private const TAB_STRIP_POSITION:Point = new Point(40, 447);
+    private const TAB_STRIP_POSITION:Point = new Point(40, 120);
     private const INTERACT_PANEL_POSITION:Point = new Point(600, 500);
     private const GRADIENT_OVERLAY_POSITION:Point = new Point(-10, 0);
     private const DARKNESS_Y_POSITION:Point = new Point(-175, -50); // x: center, y: offset
@@ -74,7 +74,8 @@ public class HUDView extends Sprite implements UnFocusAble {
 
 
     public function HUDView() {
-        //this.drawNewNew();
+        this.drawNew();
+        this.drawNewNew();
         this.createAssets();
         this.addAssets();
         this.positionAssets();
@@ -106,30 +107,55 @@ public class HUDView extends Sprite implements UnFocusAble {
     this._shape = new Shape();
     var graphics:Graphics = this._shape.graphics;
     graphics.clear();
-    graphics.beginFill(0x5e5c5a, 1);
-    graphics.drawRect(0, 0, 800, 150); // wid: 100 px / hei: 75 px
+    graphics.beginFill(0x212121, 1);
+    graphics.drawRect(0, 0, 700, 105);
     graphics.lineStyle(5, 0x5bff02, 5, true, LineScaleMode.NORMAL, CapsStyle.SQUARE, JointStyle.MITER);
     graphics.moveTo(0,0);
-    graphics.lineTo(800,0);
+    graphics.lineTo(700,0);
     graphics.moveTo(0,0);
-    graphics.lineTo(0,150);
-    graphics.moveTo(800,0);
-    graphics.lineTo(800,150);
-    graphics.moveTo(0,150);
-    graphics.lineTo(800,150);
+    graphics.lineTo(0,105);
+    graphics.moveTo(700,0);
+    graphics.lineTo(700,105);
+    graphics.moveTo(0,105);
+    graphics.lineTo(700,105);
     graphics.endFill();
-    this._shape.x = 0;
-    this._shape.y = 450;
+    this._shape.x = 53;
+    this._shape.y = 490;
     this._sprite.addChild(this._shape);
     addChild(this._sprite);
 
     trace(_sprite.width, _sprite.height);
 }
 
+    public function drawNew():void {
+        this._sprite = new Sprite();
+        this._shape = new Shape();
+        var graphics:Graphics = this._shape.graphics;
+        graphics.clear();
+        graphics.beginFill(0x5e5c5a, 1);
+        graphics.drawRect(0, 0, 192, 192);
+        graphics.lineStyle(5, 0x983dff, 5, true, LineScaleMode.NORMAL, CapsStyle.SQUARE, JointStyle.MITER);
+        graphics.moveTo(0,192);
+        graphics.lineTo(192,192);
+        graphics.moveTo(192,0);
+        graphics.lineTo(192,192);
+        graphics.moveTo(0,0);
+        graphics.lineTo(0,192);
+        graphics.moveTo(0,0);
+        graphics.lineTo(192,0);
+        graphics.endFill();
+        this._shape.x = 600;
+        this._shape.y = 5;
+        this._sprite.addChild(this._shape);
+        addChild(this._sprite);
+
+        trace(_sprite.width, _sprite.height);
+    }
+
 
     private function createAssets():void {
         //this.background = new CharacterWindowBackground();
-        this.miniMap = new MiniMapImp(188, 188);
+        this.miniMap = new MiniMapImp(190, 190);
         this.tabStrip = new TabStripView();
         this.characterDetails = new CharacterDetailsView();
         this.statMeters = new StatMetersView();

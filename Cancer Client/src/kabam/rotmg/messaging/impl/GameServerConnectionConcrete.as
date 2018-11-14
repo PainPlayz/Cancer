@@ -1209,14 +1209,14 @@ public class GameServerConnectionConcrete extends GameServerConnection {
             case "showKeyUI":
                 ShowHideKeyUISignal.instance.dispatch();
                 return;
-            case "giftChestOccupied":
-                this.giftChestUpdateSignal.dispatch(GiftStatusUpdateSignal.HAS_GIFT);
-                return;
-            case "giftChestEmpty":
-                this.giftChestUpdateSignal.dispatch(GiftStatusUpdateSignal.HAS_NO_GIFT);
-                return;
-            case "beginnersPackage":
-                return;
+            //case "giftChestOccupied":
+                //this.giftChestUpdateSignal.dispatch(GiftStatusUpdateSignal.HAS_GIFT);
+                //return;
+            //case "giftChestEmpty":
+                //this.giftChestUpdateSignal.dispatch(GiftStatusUpdateSignal.HAS_NO_GIFT);
+                //return;
+            //case "beginnersPackage":
+                //return;
         }
     }
 

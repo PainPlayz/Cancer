@@ -25,22 +25,22 @@ public class StatMetersView extends Sprite {
     private var expTimer:ExperienceBoostTimerPopup;
 
     public function StatMetersView() {
-        this.expBarBackground_ = new StatusBar(176, 16, 0x545454, 0x545454, null);
-        this.expBar_ = new StatusBar(176, 16, 5931045, 0x545454, TextKey.EXP_BAR_LEVEL);
-        this.fameBarBackground_ = new StatusBar(176, 16, 0x545454, 0x545454, null);
-        this.fameBar_ = new StatusBar(176, 16, 0xE25F00, 0x545454, TextKey.CURRENCY_FAME);
-        this.hpBarBackground_ = new StatusBar(176, 16, 0x545454, 0x545454, null);
-        this.hpBar_ = new StatusBar(176, 16, 14693428, 0x545454, TextKey.STATUS_BAR_HEALTH_POINTS);
-        this.mpBarBackground_ = new StatusBar(176, 16, 0x545454, 0x545454, null);
-        this.mpBar_ = new StatusBar(176, 16, 6325472, 0x545454, TextKey.STATUS_BAR_MANA_POINTS);
-        this.hpBar_.y = this.hpBarBackground_.y = 24;
-        this.hpBar_.x = this.hpBarBackground_.x = 98;
-        this.mpBar_.y = this.mpBarBackground_.y = 48;
-        this.mpBar_.x = this.mpBarBackground_.x = 98;
+        this.expBarBackground_ = new StatusBar(325, 24, 0x545454, 0x545454, null);
+        this.expBar_ = new StatusBar(325, 24, 5931045, 0x545454, TextKey.EXP_BAR_LEVEL);
+        this.fameBarBackground_ = new StatusBar(325, 24, 0x545454, 0x545454, null);
+        this.fameBar_ = new StatusBar(325, 24, 0xE25F00, 0x545454, TextKey.CURRENCY_FAME);
+        this.hpBarBackground_ = new StatusBar(245, 24, 0x545454, 0x545454, null);
+        this.hpBar_ = new StatusBar(245, 24, 14693428, 0x545454, TextKey.STATUS_BAR_HEALTH_POINTS);
+        this.mpBarBackground_ = new StatusBar(245, 24, 0x545454, 0x545454, null);
+        this.mpBar_ = new StatusBar(245, 24, 6325472, 0x545454, TextKey.STATUS_BAR_MANA_POINTS);
+        this.hpBar_.y = this.hpBarBackground_.y = 58;
+        this.hpBar_.x = this.hpBarBackground_.x = -220;
+        this.mpBar_.y = this.mpBarBackground_.y = 58;
+        this.mpBar_.x = this.mpBarBackground_.x = 80;
         this.fameBar_.x = this.fameBarBackground_.x  = -84;
-        this.fameBar_.y = this.fameBarBackground_.y = 24;
+        this.fameBar_.y = this.fameBarBackground_.y = 32;
         this.expBar_.x = this.expBarBackground_.x = -84;
-        this.expBar_.y = this.expBarBackground_.y = 24;
+        this.expBar_.y = this.expBarBackground_.y = 32;
         this.expBarBackground_.visible = true;
         this.expBar_.visible = true;
         this.fameBarBackground_.visible = false;

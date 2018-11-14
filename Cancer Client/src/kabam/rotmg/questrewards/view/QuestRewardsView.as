@@ -110,7 +110,7 @@ public class QuestRewardsView extends EmptyFrame {
         }
         addChild(this.nextSlot);
         this.nextSlot.setQuestionMark();
-        this.rightSlot.setUsageText("Drag the item from your inventory into the slot", 14, 0xFFFF);
+        this.rightSlot.setUsageText("Place your item into the slot", 14, 0xFFFF);
         this.rightSlot.setActionButton(this.exchangeButton);
         addChild(this.exchangeButton);
         this.exchangeButton.setText("Turn in!");
