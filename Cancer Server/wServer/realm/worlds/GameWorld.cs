@@ -33,14 +33,14 @@ namespace wServer.realm.worlds
 
         protected override void Init()
         {
-            log.InfoFormat("Initializing Game World {0}({1}) from map {2}...", Id, Name, mapId);
+            
             LoadMap("wServer.realm.worlds.maps.world" + mapId + ".wmap", MapType.Wmap);
             SetPieces.ApplySetPieces(this);
             if (oryxPresent)
                 Overseer = new Oryx(this);
             else
                 Overseer = null;
-            log.Info("Game World initalized.");
+            
         }
 
         public static GameWorld AutoName(int mapId, bool oryxPresent)

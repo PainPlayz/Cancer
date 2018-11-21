@@ -192,7 +192,7 @@ namespace wServer.logic
 
 
                  ),
-             new GoldLoot(60, 170),
+             
                     new Threshold(0.00032,
                     new ItemLoot("Greater Potion of Dexterity", 1),
                     new ItemLoot("Greater Potion of Defense", 0.5)

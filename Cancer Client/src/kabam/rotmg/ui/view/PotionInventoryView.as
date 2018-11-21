@@ -3,21 +3,16 @@ import flash.display.Sprite;
 
 import kabam.rotmg.ui.view.components.PotionSlotView;
 
-import kabam.rotmg.ui.view.components.PotionSlotView;
-
-import kabam.rotmg.ui.view.components.PotionSlotView;
-
 public class PotionInventoryView extends Sprite {
 
     private static const LEFT_BUTTON_CUTS:Array = [1, 0, 0, 1];
     private static const RIGHT_BUTTON_CUTS:Array = [0, 1, 1, 0];
-    private static const BUTTON_SPACE:int = 330;
+    private static const BUTTON_SPACE:int = 4;
 
     private const cuts:Array = [LEFT_BUTTON_CUTS, RIGHT_BUTTON_CUTS];
 
     public function PotionInventoryView() {
         var _local_2:PotionSlotView;
-        var _local_3:ButtonFactory;
         super();
         var _local_1:int;
         while (_local_1 < 2) {

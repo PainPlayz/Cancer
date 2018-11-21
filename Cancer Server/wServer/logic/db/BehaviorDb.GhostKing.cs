@@ -239,7 +239,7 @@ namespace wServer.logic
                     ),
                 new ItemLoot("Purple Drake Egg", 0.03),
                 new ItemLoot("White Drake Egg", 0.001),
-                new GoldLoot(1, 2),
+                
                 new ItemLoot("Tincture of Dexterity", 0.02)
             )
             .Init("Actual Ghost King",
@@ -249,7 +249,7 @@ namespace wServer.logic
                     new Flash(0xff000000, 0.4, 100),
                     new BackAndForth(0.5, 3)
                     ),
-                new GoldLoot(40, 40),
+                
                 new TierLoot(2, ItemType.Ring, 0.25),
                 new TierLoot(3, ItemType.Ring, 0.08),
                 new TierLoot(7, ItemType.Weapon, 0.3),

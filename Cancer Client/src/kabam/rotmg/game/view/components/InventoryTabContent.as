@@ -36,8 +36,7 @@ public class InventoryTabContent extends Sprite {
     private function positionChildren():void {
         this.storageContent.x = 7;
         this.storageContent.y = 7;
-        this.potionsInventory.y = 389;
-        this.potionsInventory.x = 104;
+        this.potionsInventory.y = (this.storage.height + 4);
     }
 
 

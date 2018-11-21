@@ -163,7 +163,7 @@ namespace wServer.logic
                         new TimedTransition(6000, "typeA")
                         )
                     ),
-                new GoldLoot(25, 30),
+                
                 new Threshold(0.03,
                 new ItemLoot("Dirk of Hematite", 0.1),
                 new TierLoot(2, ItemType.Ring, 0.11),

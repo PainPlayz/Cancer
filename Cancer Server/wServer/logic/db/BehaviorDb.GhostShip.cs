@@ -248,13 +248,13 @@ namespace wServer.logic
                         )
 
                ),
-                new GoldLoot(140, 170),
+                
                 new MostDamagers(3,
                     new ItemLoot("Potion of Wisdom", 1.0)
                 ),
                 
                 new ItemLoot("Ghost Pirate Rum", 0.008),
-                new GoldLoot(50, 76),
+                
                 new Threshold(0.025,
                     new TierLoot(9, ItemType.Weapon, 0.1),
                     new TierLoot(4, ItemType.Ability, 0.1),

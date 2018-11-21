@@ -74,6 +74,13 @@ namespace wServer.realm.commands
                 if (player.Pet != null)
                     player.Pet.Move(x + 0.5f, y + 0.5f);
                 player.UpdateCount++;
+            player.ApplyConditionEffect(new ConditionEffect
+            {
+                DurationMS = 2500,
+                Effect = ConditionEffectIndex.Invincible
+            });
+
+
                 player.Owner.BroadcastPacket(new GotoPacket
                 {
                     ObjectId = player.Id,
@@ -90,7 +97,7 @@ namespace wServer.realm.commands
 
     internal class RogueCommand : Command
     {
-        public RogueCommand() : base("rogue", 0)
+        public RogueCommand() : base("rogue", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -109,7 +116,7 @@ namespace wServer.realm.commands
     }
     internal class ArcherCommand : Command
     {
-        public ArcherCommand() : base("archer", 0)
+        public ArcherCommand() : base("archer", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -128,7 +135,7 @@ namespace wServer.realm.commands
     }
     internal class WizardCommand : Command
     {
-        public WizardCommand() : base("wizard", 0)
+        public WizardCommand() : base("wizard", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -147,7 +154,7 @@ namespace wServer.realm.commands
     }
     internal class PriestCommand : Command
     {
-        public PriestCommand() : base("priest", 0)
+        public PriestCommand() : base("priest", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -166,7 +173,7 @@ namespace wServer.realm.commands
     }
     internal class WarriorCommand : Command
     {
-        public WarriorCommand() : base("warrior", 0)
+        public WarriorCommand() : base("warrior", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -185,7 +192,7 @@ namespace wServer.realm.commands
     }
     internal class KnightCommand : Command
     {
-        public KnightCommand() : base("knight", 0)
+        public KnightCommand() : base("knight", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -204,7 +211,7 @@ namespace wServer.realm.commands
     }
     internal class PaladinCommand : Command
     {
-        public PaladinCommand() : base("paladin", 0)
+        public PaladinCommand() : base("pally", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -223,7 +230,7 @@ namespace wServer.realm.commands
     }
     internal class AssassinCommand : Command
     {
-        public AssassinCommand() : base("assassin", 0)
+        public AssassinCommand() : base("assassin", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -242,7 +249,7 @@ namespace wServer.realm.commands
     }
     internal class NecromanserCommand : Command
     {
-        public NecromanserCommand() : base("necromanser", 0)
+        public NecromanserCommand() : base("necro", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -261,7 +268,7 @@ namespace wServer.realm.commands
     }
     internal class HuntressCommand : Command
     {
-        public HuntressCommand() : base("huntress", 0)
+        public HuntressCommand() : base("huntress", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -280,7 +287,7 @@ namespace wServer.realm.commands
     }
     internal class MysticCommand : Command
     {
-        public MysticCommand() : base("mystic", 0)
+        public MysticCommand() : base("mystic", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -299,7 +306,7 @@ namespace wServer.realm.commands
     }
     internal class TricksterCommand : Command
     {
-        public TricksterCommand() : base("trickster", 0)
+        public TricksterCommand() : base("trickster", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -318,7 +325,7 @@ namespace wServer.realm.commands
     }
     internal class SorcererCommand : Command
     {
-        public SorcererCommand() : base("Sorcerer", 0)
+        public SorcererCommand() : base("Sorcerer", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -337,7 +344,7 @@ namespace wServer.realm.commands
     }
     internal class NinjaCommand : Command
     {
-        public NinjaCommand() : base("ninja", 0)
+        public NinjaCommand() : base("ninja", 1)
         {
         }
         protected override bool Process(Player player, RealmTime time, string[] args)
@@ -354,20 +361,7 @@ namespace wServer.realm.commands
             return true;
         }
     }
-    internal class SuicideCommand : Command
-    {
-        public SuicideCommand()
-            : base("nuce")
-        {
-        }
 
-        protected override bool Process(Player player, RealmTime time, string[] args)
-        {
-            player.HP = 0;
-            player.Death("Rope"); //what is will say has killed you
-            return true;
-        }
-    }
     internal class TutorialCommand : Command
     {
         public TutorialCommand()
@@ -388,6 +382,7 @@ namespace wServer.realm.commands
             return true;
         }
     }
+
     internal class TradeCommand : Command
     {
         public TradeCommand()
@@ -514,7 +509,7 @@ namespace wServer.realm.commands
                         player.ApplyConditionEffect(new ConditionEffect
                         {
                             Effect = ConditionEffectIndex.Invincible,      
-                            DurationMS = 1500
+                            DurationMS = 2500
                         });
                         player.ApplyConditionEffect(new ConditionEffect
                         {
@@ -537,7 +532,7 @@ namespace wServer.realm.commands
 
     class TellCommand : Command
     {
-        public TellCommand() : base("tell") { }
+        public TellCommand() : base("tell", 0) { }
 
         protected override bool Process(Player player, RealmTime time, string[] args)
         {

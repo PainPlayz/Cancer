@@ -213,7 +213,7 @@ namespace wServer.logic
                         
                 )
                 ),
-                new GoldLoot(100, 5000),
+                
                 new MostDamagers(10,
                     new ItemLoot("Oryx Quest Paper", 1)
                     )

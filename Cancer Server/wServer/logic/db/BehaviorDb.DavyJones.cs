@@ -64,7 +64,7 @@ namespace wServer.logic
                         new Suicide()
                         )
                     ),
-                new GoldLoot(170, 190),
+                
 
             new MostDamagers(15,
                 new TierLoot(3, ItemType.Ring, 0.2),

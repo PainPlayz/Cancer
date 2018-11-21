@@ -520,7 +520,7 @@ namespace wServer.realm.entities.player
             }
         }
 
-        private void AnnounceDeath(string killer)
+        /*private void AnnounceDeath(string killer)
         {
             var maxed = (from i in Manager.GameData.ObjectTypeToElement[ObjectType].Elements("LevelIncrease")
                          let xElement = Manager.GameData.ObjectTypeToElement[ObjectType].Element(i.Value)
@@ -536,7 +536,7 @@ namespace wServer.realm.entities.player
             foreach (var w in Manager.Worlds.Values)
                 foreach (var p in w.Players.Values)
                     p.SendError(Name + " died at level: " + Level + " Killed by: " + killer + " Fame: " + Fame + " Maxed: " + maxstat);
-        }
+        }*/
 
         public void GivePet(PetItem petInfo)
         {
@@ -599,11 +599,15 @@ namespace wServer.realm.entities.player
 
         public Dictionary<int, string> RankToPrefix = new Dictionary<int, string>()
         {
-            { 0, "Inmate" },
-            { 1, "Member" },
-            { 2, "Officer" },
-            { 3, "Leader" },
-            { 4, "Owner/Developer" }
+            { 0, "Player" },
+            { 1, "P-1" },
+            { 2, "P-2" },
+            { 3, "P-3" },
+            { 4, "P-4" },
+            { 7, "D" },
+            { 8, "M" },
+            { 9, "A" },
+            { 10, "CM" }
         };
 
         public override void Init(World owner)

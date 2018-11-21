@@ -186,12 +186,12 @@ namespace wServer.logic
                     new TimedTransition(15000, "idle")
                     )
                 ),
-             new GoldLoot(80, 95),
+             
                     new Threshold(0.0032,
                     new ItemLoot("Potion of Wisdom", 1)
                 ),
                 new Threshold(0.001,
-                    new GoldLoot(80, 95),
+                    
                     new ItemLoot("Scepter of Fulmination", 0.017),
                     new ItemLoot("Robe of the Mad Scientist", 0.02),
                     new ItemLoot("Experimental Ring", 0.03),

@@ -5,7 +5,7 @@
         public TheInnerSanctum()
         {
             Name = "The Inner Sanctum";
-            ClientWorldName = "{dungeons.The_Inner_Sanctum}";
+            ClientWorldName = "The Inner Sanctum";
             Background = 0;
             Difficulty = 5;
             ShowDisplays = true;

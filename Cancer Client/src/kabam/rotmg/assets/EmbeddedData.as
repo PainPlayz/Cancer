@@ -1,7 +1,11 @@
 ﻿package kabam.rotmg.assets {
+
+
 public class EmbeddedData {
 
     public static const PlayersCXML:Class = EmbeddedData_PlayersCXML;
+
+    private static const LoERealmItemsCXML:Class = EmbeddedData_LoERealmItemsCXML;
     private static const GroundCXML:Class = EmbeddedData_GroundCXML;
     public static const groundFiles:Array = [new GroundCXML()];
     private static const ProjectilesCXML:Class = EmbeddedData_ProjectilesCXML;

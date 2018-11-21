@@ -98,7 +98,7 @@ namespace wServer.logic
                         new Taunt(1, 6000, "Puny mortals! My {HP} HP will annihilate you!")
                     )
                 ),
-                new GoldLoot(500, 1000),
+                
                 new MostDamagers(9,
                     new ItemLoot("Greater Potion of Vitality", 1),
                     new ItemLoot("Greater Potion of Attack", 1),
@@ -106,7 +106,7 @@ namespace wServer.logic
                 ),
 
                 new Threshold(0.005,
-                    new GoldLoot(500, 1000),
+                   
                     new ItemLoot("Greater Potion of Attack", 0.3),
                     new ItemLoot("Greater Potion of Defense", 0.3),
                     new ItemLoot("Oryx Paper", 0.6),

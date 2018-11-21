@@ -14,7 +14,7 @@ namespace wServer.logic
                         )
                         
                     ),
-                new GoldLoot(100, 200),
+                
                 new MostDamagers(10,
                     new ItemLoot("Bunny Skin Armor", 0.01),
                     new ItemLoot("Greater Potion of Vitality", 1.0),

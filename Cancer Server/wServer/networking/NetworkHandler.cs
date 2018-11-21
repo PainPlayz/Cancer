@@ -232,7 +232,7 @@ namespace wServer.networking
 
         private void OnError(Exception ex)
         {
-            log.Error("Socket error.", ex);
+            
             parent.Disconnect();
         }
 

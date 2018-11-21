@@ -35,7 +35,7 @@ namespace wServer.logic
                         "Your life is an affront to Oryx. You will die."
                         )
                     ),
-                new GoldLoot(50, 150),//idk if its yours or somthign else i added... wait
+                
                 new Threshold(0.003,
                 new ItemLoot("Golden Sword", 0.04),
                 //1 sec

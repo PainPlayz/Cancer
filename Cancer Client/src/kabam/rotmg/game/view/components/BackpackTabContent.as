@@ -31,8 +31,7 @@ public class BackpackTabContent extends Sprite {
     private function positionChildren():void {
         this.backpackContent.x = 7;
         this.backpackContent.y = 7;
-        this.backpackPotionsInventory.y = 389;
-        this.backpackPotionsInventory.x = 104;
+        this.backpackPotionsInventory.y = (this.backpack.height + 4);
     }
 
     private function addChildren():void {

@@ -217,13 +217,14 @@ public class EquipmentToolTip extends ToolTip {
     }
 
     private function addTierText():void {
-        //this.tierText = TierUtil.getTierTag(this.objectXML, 16);
+
         var _local_1 = (this.isPet() == false);
         var _local_2 = (this.objectXML.hasOwnProperty("Consumable") == false);
         var _local_3 = (this.objectXML.hasOwnProperty("Treasure") == false);
         var _local_4:Boolean = this.objectXML.hasOwnProperty("Tier");
         if (((((_local_1) && (_local_2))) && (_local_3))) {
             this.tierText = new TextFieldDisplayConcrete().setSize(16).setColor(0x00ccff).setTextWidth(30).setBold(true);
+            this.tierText = TextFieldDisplayConcrete(TierUtil.getTierTag(this.objectXML, 16));
             if (_local_4) {
                 this.tierText.setStringBuilder(new LineBuilder().setParams(TextKey.TIER_ABBR, {"tier": this.objectXML.Tier}));
             }

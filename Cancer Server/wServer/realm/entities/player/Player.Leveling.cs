@@ -76,8 +76,8 @@ namespace wServer.realm.entities.player
 
         static int GetFameGoal(int fame)
         {
-            if (fame >= 4000) return 0;
-            else if (fame >= 2000) return 4000;
+            
+             if (fame >= 2000) return 0;
             else if (fame >= 800) return 2000;
             else if (fame >= 400) return 800;
             else if (fame >= 150) return 400;
@@ -90,8 +90,8 @@ namespace wServer.realm.entities.player
             var ret = 0;
             foreach (var i in Client.Account.Stats.ClassStates)
             {
-                if (i.BestFame >= 4000) ret += 6;
-                else if (i.BestFame >= 2000) ret += 5;
+                
+                 if (i.BestFame >= 2000) ret += 5;
                 else if (i.BestFame >= 800) ret += 4;
                 else if (i.BestFame >= 400) ret += 3;
                 else if (i.BestFame >= 150) ret += 2;

@@ -28,7 +28,7 @@ namespace wServer.logic
                         )
                         ),
                         new Threshold(0.0001,
-                            new GoldLoot(100, 200),
+                           
                             new ItemLoot("Coral Juice", 0.3),
                             new ItemLoot("Sea Slurp Egg", 0.25),
                             new ItemLoot("Golden Cockle", 0.05),
@@ -260,7 +260,7 @@ namespace wServer.logic
                         new Threshold(0.0032,
                             new ItemLoot("Potion of Mana", 1)
                             ), 
-                        new GoldLoot(300, 500),
+                        
                         new Threshold(0.0001,
                             
                             new ItemLoot("Coral Juice", 0.3),

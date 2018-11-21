@@ -86,7 +86,7 @@ namespace wServer.logic
                  new MostDamagers(3,
                      LootTemplates.StatIncreasePotionsLoot()
                  ),
-                 new GoldLoot(100, 200),
+                 
                  new Threshold(0.05,
                     
                      new ItemLoot("Shield of Ogmur", 0.009),

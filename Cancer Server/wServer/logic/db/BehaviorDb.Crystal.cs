@@ -223,7 +223,7 @@ namespace wServer.logic
                         new TimedTransition(3000, "Daisy_attack")
                         )
                     ),
-                new GoldLoot(65, 100),
+                
                 new Threshold(0.0003,
                     new ItemLoot("Greater Potion of Vitality", 1),
                     new ItemLoot("Greater Potion of Wisdom", 1),

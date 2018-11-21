@@ -336,7 +336,7 @@ namespace wServer.logic
                     ),
                     new State("UnsetEffect")
                 ),
-                new GoldLoot(120, 175),
+                
                 new Threshold(0.1,
                     
                     new ItemLoot("Diamond Bladed Katana", 0.1),

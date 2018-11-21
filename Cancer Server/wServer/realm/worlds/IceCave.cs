@@ -5,7 +5,7 @@
         public IceCave()
         {
             Name = "Ice Cave";
-            ClientWorldName = "{dungeons.Ice_Cave}";
+            ClientWorldName = "Ice Cave";
             Background = 0;
             Difficulty = 5;
             ShowDisplays = true;

@@ -75,7 +75,7 @@ namespace wServer.logic
                             new TimedTransition(2000, "BlindAttack")
                         )
                     ),
-                    new GoldLoot(100, 200),
+                    
                     new MostDamagers(3,
                         new ItemLoot("Potion of Vitality", 1),
                         new ItemLoot("Potion of Wisdom", 1)

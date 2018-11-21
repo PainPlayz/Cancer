@@ -22,6 +22,11 @@ namespace wServer.realm.entities.player
                 SendInfo("{\"key\":\"server.player_not_found\",\"tokens\":{\"player\":\"" + pkt.Name + "\"}}");
                 return;
             }
+            if (TradeManager.TradingPlayers.Count(_ => _.AccountId == target.AccountId) == 7 || TradeManager.TradingPlayers.Count(_ => _.AccountId == target.AccountId) == 4 || TradeManager.TradingPlayers.Count(_ => _.AccountId == target.AccountId) == 3)
+            {
+                SendInfo("{\"key\":\"server.player_cannot_be_traded\",\"tokens\":{\"player\":\"" + pkt.Name + "\"}}");
+                return;
+            }
             if (!NameChosen || !target.NameChosen)
             {
                 SendInfo("{\"key\":\"server.trade_needs_their_name\"}");

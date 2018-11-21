@@ -55,7 +55,7 @@ namespace wServer.networking
 
         public async void Stop()
         {
-            log.Info("Stoping server...");
+            
             foreach (Client i in Manager.Clients.Values.ToArray())
             {
                 await i.Save();

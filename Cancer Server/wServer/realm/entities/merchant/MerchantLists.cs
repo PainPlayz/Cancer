@@ -352,7 +352,7 @@ namespace wServer.realm.entities
 
         public static void InitMerchatLists(XmlData data)
         {
-            log.Info("Loading merchant lists...");
+            
             List<int> accessoryDyeList = new List<int>();
             List<int> clothingDyeList = new List<int>();
             List<int> accessoryClothList = new List<int>();
@@ -391,7 +391,7 @@ namespace wServer.realm.entities
             ClothingClothList = clothingClothList.ToArray();
             AccessoryClothList = accessoryClothList.ToArray();
             AccessoryDyeList = accessoryDyeList.ToArray();
-            log.Info("Merchat lists added.");
+            
         }
 
         private static readonly string[] noShopCloths =

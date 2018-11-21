@@ -150,9 +150,9 @@ namespace wServer.logic
                     ),
                     new State("Forever Alone")
                 ),
-                new GoldLoot(120, 300),
+                
                 new Threshold(0.1,
-                    new GoldLoot(120, 300),
+                    
                     new ItemLoot("Ancient Stone Sword", 0.02),
                     new ItemLoot("Ultra Ancient Stone Sword", 0.01),
 

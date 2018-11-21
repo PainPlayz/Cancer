@@ -78,15 +78,15 @@ public class TabStripMediator extends Mediator {
     }
 
     private function onTabHotkey():void {
-        //var _local_1:int = (this.view.currentTabIndex + 1);
-        //_local_1 = (_local_1 % this.view.tabs.length);
-        //this.view.setSelectedTab(_local_1);
+        var _local_1:int = (this.view.currentTabIndex + 1);
+        _local_1 = (_local_1 % this.view.tabs.length);
+        this.view.setSelectedTab(_local_1);
     }
 
     override public function destroy():void {
         this.view.tabSelected.remove(this.onTabSelected);
         this.updateBackpack.remove(this.onUpdateBackPack);
-        //this.view.friendsBtn.removeEventListener(MouseEvent.CLICK, this.onFriendsBtnClicked);
+        this.view.friendsBtn.removeEventListener(MouseEvent.CLICK, this.onFriendsBtnClicked);
     }
 
     private function onFriendsBtnClicked(_arg_1:MouseEvent):void {

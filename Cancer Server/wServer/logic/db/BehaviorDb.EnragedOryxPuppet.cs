@@ -119,7 +119,7 @@ namespace wServer.logic
                         )
 
                ),
-                new GoldLoot(440, 670),
+                
                 new MostDamagers(90,
                     new ItemLoot("Greater Potion of Wisdom", 1.0),
                     new ItemLoot("Greater Potion of Dexterity", 1),

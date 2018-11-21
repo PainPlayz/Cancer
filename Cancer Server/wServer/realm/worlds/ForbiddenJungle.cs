@@ -10,8 +10,8 @@ namespace wServer.realm.worlds
     {
         public DragonsLair()
         {
-            Name = "DragonsLair";
-            ClientWorldName = "DragonsLair";
+            Name = "Dragons Lair";
+            ClientWorldName = "Dragons Lair";
             Background = 0;
             Difficulty = 2;
             AllowTeleport = true;

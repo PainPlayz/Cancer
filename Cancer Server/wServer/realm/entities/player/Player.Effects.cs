@@ -91,7 +91,7 @@ namespace wServer.realm.entities.player
 
         internal void SetTPDisabledPeriod()
         {
-            CanTPCooldownTime = 10*1000; // 10 seconds
+            CanTPCooldownTime = 8*1000; // 10 seconds
         }
 
         public bool TPCooledDown()

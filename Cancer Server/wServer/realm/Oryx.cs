@@ -60,26 +60,6 @@ namespace wServer.realm
             spawn = new Dictionary<WmapTerrain, Tuple<int, Tuple<string, double>[]>>
             {
                 {
-                    WmapTerrain.ShoreSand, Tuple.Create(
-                        50, new[]
-                        {
-                            Tuple.Create("Pirate", 0.3),
-                            Tuple.Create("Piratess", 0.1),
-                            Tuple.Create("Snake", 0.2),
-                            Tuple.Create("Scorpion Queen", 0.4)
-                        })
-                },
-                {
-                    WmapTerrain.ShorePlains, Tuple.Create(
-                        100, new[]
-                        {
-                            Tuple.Create("Bandit Leader", 0.4),
-                            Tuple.Create("Red Gelatinous Cube", 0.2),
-                            Tuple.Create("Purple Gelatinous Cube", 0.2),
-                            Tuple.Create("Green Gelatinous Cube", 0.2)
-                        })
-                },
-                {
                     WmapTerrain.LowPlains, Tuple.Create(
                         100, new[]
                         {
@@ -236,8 +216,8 @@ namespace wServer.realm
             if (CountEnemies(
                 "Lich", "Actual Lich",
                 "Ent Ancient", "Actual Ent Ancient", "Ghost King", "Cyclops God",
-                "Mythical Crystal", "Bella the plant", "Hermit God", "Candy Goddess",
-                //"lord of the Lost Lands", 
+                "Mythical Crystal", "Bella the Plant", "Hermit God", "Candy Goddess",
+                "Lord of the Lost Lands", 
                 "Skull Shrine", "Cube God", "Grand Sphinx", 
                 "Enraged Puppet Master", "Davy Jones") != 0) return false;
 
@@ -248,12 +228,12 @@ namespace wServer.realm
         public void CloseRealm()
         {
             World ocWorld = null;
-            world.Timers.Add(new WorldTimer(2000, (w, t) =>
+            world.Timers.Add(new WorldTimer(3000, (w, t) =>
             {
                 ocWorld = world.Manager.AddWorld(new OryxCastle());
                 ocWorld.Manager = world.Manager;
             }));
-            world.Timers.Add(new WorldTimer(8000, (w, t) =>
+            world.Timers.Add(new WorldTimer(9000, (w, t) =>
             {
                 foreach (var i in world.Players.Values)
                 {
@@ -300,7 +280,7 @@ namespace wServer.realm
 
         public void Init()
         {
-            log.InfoFormat("Oryx is controlling world {0}({1})...", world.Id, world.Name);
+            
             var w = world.Map.Width;
             var h = world.Map.Height;
             var stats = new int[12];
@@ -312,7 +292,7 @@ namespace wServer.realm
                         stats[(int)tile.Terrain - 1]++;
                 }
 
-            log.Info("Spawning minions...");
+           
             foreach (var i in spawn)
             {
                 var terrain = i.Key;
@@ -334,7 +314,7 @@ namespace wServer.realm
 
         public void InitCloseRealm()
         {
-            log.InfoFormat("Oryx has closed realm {0}...", world.Name);
+            
             ClosingStarted = true;
             foreach (var i in world.Players.Values)
             {
@@ -401,7 +381,7 @@ namespace wServer.realm
         {
             player.SendInfo("Welcome to Realm of the Mad God");
             player.SendEnemy("Oryx the Mad God", "You are food for my minions!");
-            player.SendInfo("Use [WASDQE] to move; click to shoot!");
+            player.SendInfo("Use [WASD] to move; Use [QE] to rotate; Left Click to shoot!");
             player.SendInfo("Type \"/help\" for more help");
         }
 
@@ -438,7 +418,7 @@ namespace wServer.realm
 
         private void EnsurePopulation()
         {
-            log.Info("Oryx is controlling population...");
+            
             RecalculateEnemyCount();
             var state = new int[12];
             var diff = new int[12];
@@ -496,7 +476,7 @@ namespace wServer.realm
             RecalculateEnemyCount();
 
             GC.Collect();
-            log.Info("Oryx is back to sleep.");
+            
         }
 
         private ushort GetRandomObjType(Tuple<string, double>[] dat)
@@ -641,7 +621,7 @@ namespace wServer.realm
                 if (!(i is GameWorld))
                 {
                     foreach (var p in i.Players.Values)
-                        p.SendInfo($"{name} has spawned in realm! X:{pt.X}, Y:{pt.Y}");
+                        p.SendInfo($"{name} has spawned in realm!");
                 }
             }
 

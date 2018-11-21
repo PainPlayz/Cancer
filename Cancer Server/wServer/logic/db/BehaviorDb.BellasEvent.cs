@@ -72,7 +72,7 @@ namespace wServer.logic
                         )
 
                     ),
-                new GoldLoot(70, 150),
+                
 
             new Threshold(0.0003,
                 new TierLoot(3, ItemType.Ring, 0.2),

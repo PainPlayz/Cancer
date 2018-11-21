@@ -64,8 +64,8 @@ namespace wServer.logic.loot
 
         public ItemLoot(string item, double probability)
         {
-            this.item = item;
-            this.probability = probability;
+            this.item = item * 2.5;
+            this.probability = probability * 2.5;
         }
 
         public void Populate(RealmManager manager, Enemy enemy, Tuple<Player, int> playerDat,

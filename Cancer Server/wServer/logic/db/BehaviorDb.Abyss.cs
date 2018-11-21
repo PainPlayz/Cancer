@@ -101,7 +101,7 @@ namespace wServer.logic
                         )
                         
                     ),
-                new GoldLoot(200, 420),
+               
                 //LootTemplates.DefaultEggLoot(EggRarity.Legendary),
                 new MostDamagers(7,
                     new ItemLoot("Greater Potion of Vitality", 1.0)

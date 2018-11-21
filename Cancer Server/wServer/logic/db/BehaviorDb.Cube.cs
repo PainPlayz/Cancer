@@ -25,7 +25,7 @@ namespace wServer.logic
                             new State("spiral2"),
                             new Wander(1)
                         ),
-                new GoldLoot(70, 150),
+                
                 new Threshold(0.07,
                     
                     new TierLoot(3, ItemType.Ring, 0.2),

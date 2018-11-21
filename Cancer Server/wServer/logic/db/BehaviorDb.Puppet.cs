@@ -267,7 +267,7 @@ namespace wServer.logic
                     new State("UnsetEffect")
                 ),             
                 new Threshold(0.15,
-                    new GoldLoot(70, 120),
+                    
                 new TierLoot(10, ItemType.Weapon, 0.045),
                 new TierLoot(10, ItemType.Weapon, 0.05),
                 new TierLoot(5, ItemType.Ability, 0.045),

@@ -45,7 +45,7 @@ namespace wServer.realm
     {
         public static List<string> Realms = new List<string>(44)
         {
-            "Cancer World"
+            "Mage", "Goblin"
         };
         public static List<string> CurrentRealmNames = new List<string>();
         public const int MAX_REALM_PLAYERS = 50;
@@ -180,7 +180,7 @@ namespace wServer.realm
 
         public void Initialize()
         {
-            log.Info("Initializing Realm Manager...");
+            
 
             GameData = new XmlData();
             Behaviors = new BehaviorDb(this);
@@ -199,7 +199,7 @@ namespace wServer.realm
             Chat = new ChatManager(this);
             Commands = new CommandManager(this);
 
-            log.Info("Realm Manager initialized.");
+            
         }
 
         public Vault PlayerVault(Client processor)
@@ -240,7 +240,7 @@ namespace wServer.realm
 
         public void Run()
         {
-            log.Info("Starting Realm Manager...");
+            
 
             Network = new NetworkTicker(this);
             Logic = new LogicTicker(this);
@@ -259,12 +259,12 @@ namespace wServer.realm
             logic.Start();
             network.Start();
 
-            log.Info("Realm Manager started.");
+            
         }
 
         public void Stop()
         {
-            log.Info("Stopping Realm Manager...");
+            
 
             Terminating = true;
             List<Client> saveAccountUnlock = new List<Client>();
@@ -282,7 +282,7 @@ namespace wServer.realm
             logic.Join();
             network.Join();
 
-            log.Info("Realm Manager stopped.");
+            
         }
 
         public bool TryConnect(Client psr)

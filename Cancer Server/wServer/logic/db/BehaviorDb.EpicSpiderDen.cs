@@ -38,7 +38,7 @@ namespace wServer.logic
                          )
                          ),
                  new Threshold(0.32,
-                      new GoldLoot(100, 200),
+                      
                     new ItemLoot("Potion of Mana", 1),
                     new ItemLoot("Doku No Ken", 0.017)
                      )

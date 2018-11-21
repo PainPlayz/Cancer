@@ -49,7 +49,7 @@ namespace wServer.networking
 
         public void Start()
         {
-            log.Info("Starting policy server...");
+            
             try
             {
                 listener.Start();
@@ -69,7 +69,7 @@ namespace wServer.networking
         {
             if (started)
             {
-                log.Info("Stopping policy server...");
+                
                 listener.Stop();
             }
         }

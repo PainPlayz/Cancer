@@ -1,7 +1,7 @@
 ﻿package kabam.rotmg.assets {
 public class EmbeddedAssets {
-
     public static var particlesEmbed:Class = EmbeddedAssets_particlesEmbed;
+    public static const LoERealmEquipmentsEmbed_:Class = EmbeddedAssets_LoERealmEquipmentsEmbed_;
     public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
     public static const EvolveBackground:Class = EmbeddedAssets_EvolveBackground;
     public static const DarknessBackground:Class = EmbeddedAssets_DarknessBackground;

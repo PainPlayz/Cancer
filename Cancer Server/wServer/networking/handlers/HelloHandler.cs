@@ -44,12 +44,12 @@ namespace wServer.networking.handlers
             {
                 if ((client.Account = db.Verify(packet.GUID, packet.Password, Manager.GameData)) == null)
                 {
-                    log.Info(@"Account not verified.");
+                    
                     client.Account = Database.CreateGuestAccount(packet.GUID);
 
                     if (client.Account == null)
                     {
-                        log.Info(@"Account is null!");
+                        
                         client.SendPacket(new FailurePacket
                         {
                             ErrorDescription = "Invalid account."

@@ -40,7 +40,7 @@ public class TabTextView extends TabView {
     }
 
     private function initBackground(_arg_1:Sprite):void {
-        //this.background = _arg_1;
+        this.background = _arg_1;
         addChild(_arg_1);
     }
 

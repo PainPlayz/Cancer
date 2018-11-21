@@ -98,6 +98,7 @@ namespace wServer.realm
         public ConcurrentDictionary<int, StaticObject> StaticObjects { get; private set; }
         public List<WorldTimer> Timers { get; }
         public int Background { get; protected set; }
+        public bool Dungeon { get; set; }
 
         public CollisionMap<Entity> EnemiesCollision { get; private set; }
         public CollisionMap<Entity> PlayersCollision { get; private set; }
@@ -109,6 +110,7 @@ namespace wServer.realm
         public string[] ExtraXml { get; protected set; }
 
         public bool Dungeon { get; protected set; }
+        
         public bool Cave { get; protected set; }
         public bool Shaking { get; protected set; }
 

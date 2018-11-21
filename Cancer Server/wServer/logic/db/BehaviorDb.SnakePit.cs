@@ -268,7 +268,7 @@ namespace wServer.logic
                         )
                     )
                 ),
-                new GoldLoot(10, 70),
+                
                 new MostDamagers(3,
                     new ItemLoot("Potion of Speed", 1)
                 ),

@@ -152,7 +152,7 @@ namespace wServer.logic
                         new TimedTransition(6000, "blastcannonballs")
                         )
                     ),
-                new GoldLoot(60, 120),
+                
                 new MostDamagers(3,
                     new ItemLoot("Potion of Speed", 1.0)
                 ),

@@ -38,7 +38,7 @@ namespace wServer.logic
                         )
                     ),
                 new Threshold(0.025,
-                    new GoldLoot(75, 175),
+                    
                     new TierLoot(9, ItemType.Weapon, 0.1),
                     new TierLoot(4, ItemType.Ability, 0.1),
                     new TierLoot(9, ItemType.Armor, 0.1),

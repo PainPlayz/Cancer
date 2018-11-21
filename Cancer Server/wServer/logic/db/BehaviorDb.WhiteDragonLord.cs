@@ -120,7 +120,7 @@ namespace wServer.logic
 
 
                         ),
-                new GoldLoot(700, 1200),
+                
 
                 new Threshold(0.003,
                     new ItemLoot("Greater Potion of Defense", 1),
@@ -144,7 +144,7 @@ namespace wServer.logic
          .Init("Cyan Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(100, 140),
+                
                 new Threshold(0.03,
                     new ItemLoot("Almandine Armor of Anger", 0.0081),
                     new ItemLoot("Almandine Ring of Wrath", 0.0081),
@@ -173,7 +173,7 @@ namespace wServer.logic
         .Init("Purple Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(100, 140),
+                
                 new Threshold(0.03,
                     new ItemLoot("Alice Blue Clothing Dye", 0.3),
                     new ItemLoot("Alice Blue Accessory Dye", 0.3),
@@ -192,7 +192,7 @@ namespace wServer.logic
          .Init("White Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(100, 140),
+                
                 new Threshold(0.03,
                     new ItemLoot("Greater Potion of Defense", 0.4),
                     new ItemLoot("Greater Potion of Attack", 0.4),
@@ -220,7 +220,7 @@ namespace wServer.logic
         .Init("Gold Red Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(200, 210),
+                
                 new Threshold(0.03,
                     new ItemLoot("1000 Gold", 0.3),
                      new ItemLoot("100 Gold", 0.3),
@@ -232,7 +232,7 @@ namespace wServer.logic
          .Init("Gold Blue Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(200, 210),
+                
                 new Threshold(0.03,
                     new ItemLoot("500 Fame", 0.3),
                      new ItemLoot("100 Fame", 0.3),
@@ -244,7 +244,7 @@ namespace wServer.logic
         .Init("Blue Bag loot balloon",
             new State("1"
             ),
-                new GoldLoot(100, 140),
+                
                 new Threshold(0.03,
                     new ItemLoot("Potion of Defense", 0.3),
                     new ItemLoot("Potion of Attack", 0.3),

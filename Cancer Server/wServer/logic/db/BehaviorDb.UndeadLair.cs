@@ -76,7 +76,7 @@ namespace wServer.logic
                         )
                 ),
 
-                new GoldLoot(10, 70),
+                
                 new Threshold(0.32, /* Maximum 3 wis, minimum 0 wis */
                     new ItemLoot("Potion of Wisdom", 1)
                 ),

@@ -52,7 +52,7 @@ namespace wServer.realm.commands
             }
             catch (Exception ex)
             {
-                log.Error("Error when executing the command.", ex);
+                
                 player.SendError("Error when executing the command.");
                 return false;
             }

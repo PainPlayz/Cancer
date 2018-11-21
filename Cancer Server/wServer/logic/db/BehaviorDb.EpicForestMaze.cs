@@ -23,7 +23,7 @@ namespace wServer.logic
                     new ItemLoot("Potion of Vitality", 0.9)
                 ),
                 new Threshold(0.025,
-                     new GoldLoot(100, 200),
+                     
                     new TierLoot(8, ItemType.Armor, 0.035),
                     new TierLoot(9, ItemType.Armor, 0.03),
                     new TierLoot(10, ItemType.Armor, 0.025),

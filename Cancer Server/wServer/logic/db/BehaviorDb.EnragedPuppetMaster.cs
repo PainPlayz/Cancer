@@ -84,7 +84,7 @@ namespace wServer.logic
                         new TimedTransition(1000, "basic")
                         )
                     ),
-                    new GoldLoot(100, 400),
+                    
                     new Threshold(0.0025,
                     
                     new TierLoot(13, ItemType.Weapon, 0.1),

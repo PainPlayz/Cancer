@@ -37,7 +37,7 @@ namespace wServer.realm
 
         public void TickLoop()
         {
-            log.Info("Network loop started.");
+            
             Work work;
             while (true)
             {

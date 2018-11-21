@@ -86,7 +86,7 @@ namespace wServer.logic
                         new ItemLoot("Potion of Life", 2)
                     ),
                     new Threshold(0.001,
-                         new GoldLoot(100, 1000),
+                         
                         new ItemLoot("Ring of the Pyramid", 0.01),
                         new ItemLoot("Ultra Ring of the Pyramid", 0.007),
 
@@ -216,7 +216,7 @@ namespace wServer.logic
                  )
                  ),
                 new Threshold(0.01,
-                 new GoldLoot(5, 10),
+                 
                  new ItemLoot("Tincture of Life", 0.2),
                  new ItemLoot("Tincture of Mana", 0.2),
                  new ItemLoot("Tincture of Defense", 0.2),
@@ -273,7 +273,7 @@ namespace wServer.logic
                                         )
                                          ),
                 new Threshold(0.01,
-                     new GoldLoot(1, 5),
+                     
                 new ItemLoot("Magic Potion", 0.2),
 
                 new ItemLoot("Health Potion", 0.2),
@@ -330,7 +330,7 @@ namespace wServer.logic
                                 )
                                 ),
                 new Threshold(0.01,
-                    new GoldLoot(1, 5),
+                    
                 new ItemLoot("Magic Potion", 0.2),
                 new ItemLoot("Health Potion", 0.2),
 
@@ -437,7 +437,7 @@ namespace wServer.logic
                                         )
                                         ),
                                 new Threshold(0.01,
-                                    new GoldLoot(10, 100),
+                                    
                                 new ItemLoot("Potion of Attack", 0.3),
                                 new ItemLoot("Potion of Speed", 0.3),
 
@@ -929,7 +929,7 @@ namespace wServer.logic
                                         )
                                 ),
                                 new Threshold(0.001,
-                                    new GoldLoot(100, 1000),
+                                    
                                         new ItemLoot("Potion of Life", 1),
 
                                         new ItemLoot("Ultra Staff of Ra", 0.0062),
@@ -1210,7 +1210,7 @@ namespace wServer.logic
                                         )
                                 ),
                                 new Threshold(0.001,
-                                     new GoldLoot(100, 1000),
+                                     
                                         new ItemLoot("Potion of Life", 1),
 
                                         new ItemLoot("Ring of the Nile", 0.01),

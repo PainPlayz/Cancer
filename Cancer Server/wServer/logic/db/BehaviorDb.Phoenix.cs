@@ -99,7 +99,7 @@ namespace wServer.logic
                         new TimedTransition(4500, "xxx")
                         )
                     ),
-                new GoldLoot(20, 50),
+                
 
                 new ItemLoot("Wine Cellar Incantation", 0.002),
             new ItemLoot("Ring of 10 Phoenixes", 0.012)

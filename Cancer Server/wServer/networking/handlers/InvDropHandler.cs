@@ -65,6 +65,21 @@ namespace wServer.networking.handlers
                 if (item != null)
                 {
                     Container container;
+                    if (Client.Account.Rank == 4)
+                    {
+                        container = new Container(client.Player.Manager, SOUL_BAG, 1000 * 30, true)
+                        {
+                            BagOwners = new string[1] { client.Player.AccountId }
+                        };
+                    }
+                    if (Client.Account.Rank == 3)
+                    {
+                        container = new Container(client.Player.Manager, SOUL_BAG, 1000 * 30, true)
+                        {
+                            BagOwners = new string[1] { client.Player.AccountId }
+                        };
+                    }
+                else
                     if (item.Soulbound)
                     {
                         container = new Container(client.Player.Manager, SOUL_BAG, 1000*30, true)
@@ -72,6 +87,7 @@ namespace wServer.networking.handlers
                             BagOwners = new string[1] { client.Player.AccountId }
                         };
                     }
+                    
                     else
                     {
                         container = new Container(client.Player.Manager, NORM_BAG, 1000*30, true);

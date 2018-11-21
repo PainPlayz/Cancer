@@ -47,7 +47,7 @@ namespace wServer.realm
 
         public void TickLoop()
         {
-            log.Info("Logic loop started.");
+            
             Stopwatch watch = new Stopwatch();
             long dt = 0;
             long count = 0;
@@ -65,9 +65,6 @@ namespace wServer.realm
                 long b = watch.ElapsedMilliseconds;
 
                 count += times;
-                if (times > 3)
-                    log.Warn("LAGGED!| time:" + times + " dt:" + dt + " count:" + count + " time:" + b + " tps:" +
-                             count/(b/1000.0));
 
                 t.tickTimes = b;
                 t.tickCount = count;

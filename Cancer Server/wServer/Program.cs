@@ -29,7 +29,7 @@ namespace wServer
 
         private static void Main(string[] args)
         {
-            Console.Title = "Fabiano Swagger of Doom - World Server";
+            Console.Title = "Eternal Dimension - World Server";
             try
             {
                 XmlConfigurator.ConfigureAndWatch(new FileInfo("log4net_wServer.config"));
@@ -46,7 +46,7 @@ namespace wServer
 
                 manager = new RealmManager(
                     Settings.GetValue<int>("maxClients", "100"),
-                    Settings.GetValue<int>("tps", "20"));
+                    Settings.GetValue<int>("tps", "30"));
 
                 WhiteList = Settings.GetValue<bool>("whiteList", "false");
                 Verify = Settings.GetValue<bool>("verifyEmail", "false");

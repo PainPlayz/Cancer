@@ -19,7 +19,7 @@ namespace wServer.realm.worlds
         {
             Id = NEXUS_ID;
             Name = "Nexus";
-            ClientWorldName = "server.nexus";
+            ClientWorldName = "Nexus";
             Background = 2;
             AllowTeleport = true;
             Difficulty = -1;

@@ -79,7 +79,7 @@ namespace wServer.logic
                         new TimedTransition(10000, "transition1")
                         )
                 ),
-                new GoldLoot(100, 200),
+                
                 new Threshold(0.032, /* Maximum 3 wis, minimum 0 wis */
                     new ItemLoot("Greater Potion of Speed", 5),
                     new ItemLoot("Greater Potion of Attack", 5),

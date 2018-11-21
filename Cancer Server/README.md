@@ -2,8 +2,8 @@
 
 You are free to use this source as long as u credit this guys:
 
-- PainFX (Djmanj)
-- Maurth (A)
+- PainFX/Migi
+- Tidan
 - ossimc82/Fabian Fischer
 - C453
 - Trapped

@@ -25,7 +25,7 @@ namespace wServer.networking
 
     public class Client : IDisposable
     {
-        public const string SERVER_VERSION = "27.7.X2";
+        public const string SERVER_VERSION = "2.0";
         private bool disposed;
 
         private static readonly ILog log = LogManager.GetLogger(typeof (Client));
@@ -66,7 +66,7 @@ namespace wServer.networking
 
         public void BeginProcess()
         {
-            log.InfoFormat($"Received client @ {Socket.RemoteEndPoint}.");
+            
             handler = new NetworkHandler(this, Socket);
             handler.BeginHandling();
         }

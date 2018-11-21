@@ -60,7 +60,7 @@ namespace wServer.logic
                         new Suicide()
                     )
                 ),
-                new GoldLoot(70, 120),
+                
                 new Threshold(0.3,
                     new ItemLoot("Potion of Defense", 1)
                 ),

@@ -20,7 +20,7 @@ namespace db
         private static readonly List<string> emails = new List<string>();
         private static readonly string[] Names =
         {
-            "xd", "Ayy", "Lmao", "Cake",
+            "Unnamed"
         };
 
         private static string _host, _databaseName, _user, _password;

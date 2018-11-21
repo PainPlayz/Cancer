@@ -8,10 +8,10 @@ namespace db
 
         public static string[] Rewards { get; } =
         {
-            "FortuneToken:1",
-            "FortuneToken:1",
-            "FortuneToken:2",
-            "FortuneToken:2"
+            "Credits:1",
+            "Credits:1",
+            "Credits:2",
+            "Credits:2"
         };
 
         public static string[] Descriptions { get; } =

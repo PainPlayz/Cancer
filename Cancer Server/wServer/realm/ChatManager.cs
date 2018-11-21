@@ -24,7 +24,7 @@ namespace wServer.realm
         {
             src.Owner.BroadcastPacketSync(new TextPacket()
             {
-                Name = ((src.Client.Account.Rank >= 2 && src.Client.Account.Rank != 5) ? "@" : (src.Client.Account.Rank >= 1 && src.Client.Account.Rank != 5) ? "#" : "")
+                Name = ((src.Client.Account.Rank >= 7 && src.Client.Account.Rank != 10) ? "@" : (src.Client.Account.Rank >= 1 && src.Client.Account.Rank != 10) ? "#" : "")
                 + $"[{src.RankToPrefix[src.Client.Account.Rank]}]" + src.Name,
                 ObjectId = src.Id,
                 Stars = src.Stars,

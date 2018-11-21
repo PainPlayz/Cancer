@@ -147,7 +147,7 @@ namespace wServer.logic
                         new ItemLoot("Greater Potion of Vitality", 1)
                     )
                 ),
-                new GoldLoot(100, 200),
+                
                 new Threshold(0.005,
                      new ItemLoot("Greater Potion of Dexterity", 1),
                      new ItemLoot("Blue-Water Sword", 0.01),
@@ -199,7 +199,7 @@ namespace wServer.logic
                         new ItemLoot("Potion of Vitality", 1)
                     )
                 ), 
-                new GoldLoot(100, 200),
+                
                 new Threshold(0.05,
                      new ItemLoot("Potion of Dexterity", 1)
                 )
